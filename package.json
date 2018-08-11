@@ -1,5 +1,5 @@
 {
-  "name": "reactix",
+  "name": "@tariqporter/reactix",
   "version": "0.0.1",
   "description": "Create scaffolding for React components using Redux",
   "main": "index.js",
