@@ -1,0 +1,20 @@
+{
+  "name": "reactix",
+  "version": "0.0.1",
+  "description": "Create scaffolding for React components using Redux",
+  "main": "index.js",
+  "bin": {
+    "reactix": "./bin/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "tariqporter"
+    }
+  ]
+}
