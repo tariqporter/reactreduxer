@@ -15,8 +15,8 @@ exports.run = () => {
 
     let componentName = path.basename(dir);
     
-    let componentTemplate = fs.readFileSync(path.join(__dirname, './templates/componentTemplate.tsx'), 'utf8');
-    let componentContainerTemplate = fs.readFileSync(path.join(__dirname, './templates/componentContainerTemplate.tsx'), 'utf8');
+    let componentTemplate = fs.readFileSync(path.join(__dirname, './templates/component.tsx'), 'utf8');
+    let componentContainerTemplate = fs.readFileSync(path.join(__dirname, './templates/componentContainer.tsx'), 'utf8');
 
 
 	//let js = getDirective(componentName, vendorPrefix);
