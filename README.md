@@ -4,20 +4,20 @@ Create React components using Redux
 Install with
 
 ```
-npm install -g reactix
+npm install -g reactreduxer
 ```
 
-Run `reactix` with the name of the component you want to create
+Run `reactreduxer` with the name of the component you want to create
 
 
 ```
-reactix MyComponent 
+reactreduxer MyComponent 
 ```
 
 You may also use a relative path
 
 ```
-reactix ./components/MyComponent 
+reactreduxer ./components/MyComponent 
 ```
 
 A folder will be created for the component and will contain the following files
