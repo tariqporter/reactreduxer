@@ -1,10 +1,10 @@
 {
   "name": "reactreduxer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Create scaffolding for React components using Redux",
   "main": "index.js",
   "bin": {
-    "reactix": "./bin/reactreduxer.js"
+    "reactreduxer": "./bin/reactreduxer.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
