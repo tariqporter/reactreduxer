@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import {COMPONENT_NAME} from './{COMPONENT_NAME}';
 
 export class {COMPONENT_NAME}Container extends React.Component {
-  constructor(props) {
+  constructor(props: any) {
     super(props);
     // const { dispatch } = props;
   }
@@ -12,7 +12,7 @@ export class {COMPONENT_NAME}Container extends React.Component {
   //   dispatch(initialAction(data))
   // }
 
-  render() {
+  public render() {
     return (
         <{COMPONENT_NAME} {...this.props} />
       );
@@ -27,7 +27,7 @@ const mapDispatchToProps = (dispatch: any, ownProps: any) => ({
   // myFunc: () => dispatch(myFunc(ownProps.property))
 })
 
-export default {COMPONENT_NAME}ConnectedContainer = connect(
+export default connect(
   mapStateToProps, 
   mapDispatchToProps
 )({COMPONENT_NAME}Container);

@@ -1,3 +1,4 @@
+import * as React from 'react';
 import './{COMPONENT_NAME}.css';
 
 export default (props: any) => {
@@ -6,6 +7,7 @@ export default (props: any) => {
 
   return (
     <div>
+      Hi, I am the {COMPONENT_NAME} component!
     </div>
   );
 }
