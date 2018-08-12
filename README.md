@@ -1,4 +1,4 @@
-# reactix
+# reactreduxer
 Create React components using Redux
 
 Install with
