@@ -50,7 +50,7 @@ function newTemplates(projectName, dir) {
 		}
 		
 		const packagePath = path.join(newPath, './package.json');
-		const packageTemplate = fs.readFileSync(packagePath, 'utf8').replace(/{PROJECT_NAME}/gi, projectName);
+		const packageTemplate = fs.readFileSync(packagePath, 'utf8').replace(/project-name/gi, projectName);
 		fs.writeFileSync(packagePath, packageTemplate);
 		
 		console.log(`New project ${projectName} created successfully!\nPerform a yarn or npm install to install dependecnies.`);
