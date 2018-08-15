@@ -1,11 +1,9 @@
-﻿const initialState = {
-  test: '' as string,
-  comments: [] as any[]
-};
+﻿import { Actions } from '../actions';
+import initialState from './initialState';
 
 export default (state = initialState, action: any) => {
   switch (action.type) {
-    case 'ON_CHANGE':
+    case Actions.ON_MY_FIELD_CHANGE:
       return {...state, [action.name]: action.value};
     default:
       return state;
