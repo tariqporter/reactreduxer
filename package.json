@@ -2,6 +2,9 @@
   "name": "reactreduxer",
   "version": "0.0.6",
   "description": "Create scaffolding for React components using Redux",
+  "dependencies": {
+	"ncp": "^2.0.0"
+  },
   "main": "index.js",
   "bin": {
     "reactreduxer": "./bin/reactreduxer.js"
