@@ -2,7 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import {COMPONENT_NAME} from './{COMPONENT_NAME}';
 
-export class {COMPONENT_NAME}Container extends React.Component {
+export class {COMPONENT_NAME}Container extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     // const { dispatch } = props;
