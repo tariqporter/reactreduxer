@@ -5,10 +5,9 @@ import {COMPONENT_NAME} from './{COMPONENT_NAME}';
 export class {COMPONENT_NAME}Container extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    // const { dispatch } = props;
   }
 
-  // componentDidMount() {
+  // public componentDidMount() {
   //   dispatch(initialAction(data))
   // }
 

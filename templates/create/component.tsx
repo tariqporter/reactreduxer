@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './{COMPONENT_NAME}.css';
+//import './{COMPONENT_NAME}.css';
 
 export default (props: any) => {
   // const { } = props;  //state
