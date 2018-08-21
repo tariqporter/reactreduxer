@@ -1,6 +1,6 @@
 {
   "name": "reactreduxer",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Create scaffolding for React components using Redux",
   "dependencies": {
 	"ncp": "^2.0.0"
