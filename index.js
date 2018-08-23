@@ -35,7 +35,10 @@ function createTemplates(componentName, dir) {
 	componentContainerTemplate = componentContainerTemplate.replace(/{COMPONENT_NAME}/gi, componentName);
 	fs.writeFileSync(`${dir}/${componentName}.Container.tsx`, componentContainerTemplate);
 
-	fs.writeFileSync(`${dir}/${componentName}.test.tsx`, '');
+	let componentTestTemplate = fs.readFileSync(path.join(__dirname, './templates/create/componentTest.tsx'), 'utf8');
+	componentTestTemplate = componentTestTemplate.replace(/{COMPONENT_NAME}/gi, componentName);
+	fs.writeFileSync(`${dir}/${componentName}.test.tsx`, componentTestTemplate);
+
 	fs.writeFileSync(`${dir}/${componentName}.scss`, '');
 	
 	console.log(`Component ${componentName} created successfully!`);

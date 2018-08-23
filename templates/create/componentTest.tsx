@@ -1,25 +1,20 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { mount, ReactWrapper } from "enzyme";
-import App from './App';
-import { Provider } from 'react-redux';
+import { shallow, ShallowWrapper } from "enzyme";
+import {COMPONENT_NAME} from './{COMPONENT_NAME}.Container';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import rootReducer from '../reducers';
+import rootReducer from '../../reducers';
 
 describe('App', () => {
-  let wrapper: ReactWrapper;
+  let wrapper: ShallowWrapper;
   const store = createStore(
     rootReducer,
     applyMiddleware(thunk)
   );
 
   beforeEach(() => {
-    wrapper = mount(
-      <Provider store={store}>
-        <App />
-      </Provider>
-    );
+    wrapper = shallow(<{COMPONENT_NAME} store={store} />).dive();
   });
 
   it('renders without crashing', () => {
