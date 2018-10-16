@@ -7,15 +7,15 @@ Install with
 npm install -g reactreduxer
 ```
 
-To create a new project run `reactreduxer` with the name of the project you want to create
-The `new` option must be used (or just `n`)
+#### To create a new project run `reactreduxer` with the name of the project you want to create.
+#### The `new` option must be used (or just `n`)
 
 ```
 reactreduxer new my-project 
 ```
 
-To create a component run `reactreduxer` with the name of the component you want to create
-The `create` option must be used (or just `c`)
+#### To create a component run `reactreduxer` with the name of the component you want to create.
+#### The `create` option must be used (or just `c`)
 
 ```
 reactreduxer create MyComponent 
