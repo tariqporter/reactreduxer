@@ -7,17 +7,18 @@ Install with
 npm install -g reactreduxer
 ```
 
-Run `reactreduxer` with the name of the component you want to create
-
-
-```
-reactreduxer MyComponent 
-```
-
-You may also use a relative path
+To create a new project run `reactreduxer` with the name of the project you want to create
+The `new` option must be used (or just `n`)
 
 ```
-reactreduxer ./components/MyComponent 
+reactreduxer new my-project 
+```
+
+To create a component run `reactreduxer` with the name of the component you want to create
+The `create` option must be used (or just `c`)
+
+```
+reactreduxer create MyComponent 
 ```
 
 A folder will be created for the component and will contain the following files
@@ -26,3 +27,9 @@ A folder will be created for the component and will contain the following files
 * **MyComponent.Container.tsx**
 * **MyComponent.test.tsx**
 * **MyComponent.scss**
+
+You may also use a relative path
+
+```
+reactreduxer c ./components/MyComponent 
+```
